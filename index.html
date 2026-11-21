@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediCare Plus — Modern Multispecialty Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="hospital.css" />
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#home" class="brand-logo" aria-label="MediCare Plus Home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <rect x="9" y="2" width="6" height="20" rx="2" fill="currentColor" />
+            <rect x="2" y="9" width="20" height="6" rx="2" fill="currentColor" />
+          </svg>
+        </span>
+        <span class="brand-text">MediCare <strong>Plus</strong></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#doctors" class="nav-link">Doctors</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#appointment" class="btn btn-primary nav-cta">Book Appointment</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow-badge">Accredited Multispecialty Care</span>
+          <h1 class="hero-title">Healthcare That Puts You First.</h1>
+          <p class="hero-description">
+            Experience compassionate clinical excellence backed by board-certified specialists, modern diagnostic suites, and personalized treatment pathways designed around your recovery.
+          </p>
+          <div class="hero-actions">
+            <a href="#appointment" class="btn btn-primary btn-lg">Book Appointment</a>
+            <a href="#doctors" class="btn btn-outline btn-lg">Explore Doctors</a>
+          </div>
+
+          <div class="hero-stats" aria-label="Hospital key highlights">
+            <div class="stat-item">
+              <strong class="stat-number">45+</strong>
+              <span class="stat-label">Senior Specialists</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <strong class="stat-number">98%</strong>
+              <span class="stat-label">Patient Satisfaction</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <strong class="stat-number">24/7</strong>
+              <span class="stat-label">Emergency &amp; Diagnostics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-image-frame">
+            <img
+              src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=900&q=80"
+              alt="Senior physician smiling warmly in a modern clinical consultation suite"
+              class="hero-photo"
+            />
+          </div>
+
+          <aside class="floating-card" aria-label="Same-day consultation availability">
+            <div class="floating-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </div>
+            <div class="floating-text">
+              <strong>Same-Day Consultations</strong>
+              <span>Verified specialists across 6 core departments</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEDICAL SERVICES -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-tag">Clinical Departments</span>
+          <h2 class="section-title">Comprehensive Medical Services</h2>
+          <p class="section-subtitle">
+            Coordinated outpatient and inpatient care delivered with evidence-based protocols and transparent guidance.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+              </svg>
+            </div>
+            <h3 class="service-title">Cardiology</h3>
+            <p class="service-desc">
+              Preventive heart screenings, non-invasive echocardiography, rhythm management, and interventional cardiac care.
+            </p>
+            <a href="#appointment" class="service-link" data-dept="Cardiology">Schedule visit &rarr;</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z" />
+                <line x1="9" y1="21" x2="15" y2="21" />
+              </svg>
+            </div>
+            <h3 class="service-title">Neurology</h3>
+            <p class="service-desc">
+              Advanced diagnostics and long-term care for migraine disorders, epilepsy, stroke recovery, and neuromuscular conditions.
+            </p>
+            <a href="#appointment" class="service-link" data-dept="Neurology">Schedule visit &rarr;</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="4" />
+                <path d="M6 20v-2a6 6 0 0 1 12 0v2" />
+              </svg>
+            </div>
+            <h3 class="service-title">Pediatrics</h3>
+            <p class="service-desc">
+              Gentle newborn wellness checks, immunization schedules, developmental assessments, and acute childhood illness care.
+            </p>
+            <a href="#appointment" class="service-link" data-dept="Pediatrics">Schedule visit &rarr;</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 4a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V16.27c.6.34 1 .99 1 1.73a2 2 0 0 1-2 2 2 2 0 0 1-1.73-1H7.73A2 2 0 0 1 6 20a2 2 0 0 1-2-2c0-.74.4-1.39 1-1.73V7.73C4.4 7.39 4 6.74 4 6a2 2 0 0 1 2-2 2 2 0 0 1 1.73 1h8.54A2 2 0 0 1 18 4z" />
+              </svg>
+            </div>
+            <h3 class="service-title">Orthopedics</h3>
+            <p class="service-desc">
+              Joint preservation, sports injury rehabilitation, arthroscopic procedures, and personalized mobility recovery programs.
+            </p>
+            <a href="#appointment" class="service-link" data-dept="Orthopedics">Schedule visit &rarr;</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+              </svg>
+            </div>
+            <h3 class="service-title">Dermatology</h3>
+            <p class="service-desc">
+              Clinical dermatology for chronic skin conditions, allergy evaluations, dermoscopy screenings, and restorative skin therapy.
+            </p>
+            <a href="#appointment" class="service-link" data-dept="Dermatology">Schedule visit &rarr;</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3" />
+                <path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4" />
+                <circle cx="20" cy="10" r="2" />
+              </svg>
+            </div>
+            <h3 class="service-title">General Medicine</h3>
+            <p class="service-desc">
+              Comprehensive internal medicine, annual preventive health checkups, diabetes and hypertension management, and primary care.
+            </p>
+            <a href="#appointment" class="service-link" data-dept="General Medicine">Schedule visit &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR DOCTORS -->
+    <section class="section doctors-section" id="doctors">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-tag">Medical Leadership</span>
+          <h2 class="section-title">Meet Our Specialists</h2>
+          <p class="section-subtitle">
+            Select a physician below to pre-fill their department and profile directly into your appointment request.
+          </p>
+        </div>
+
+        <div class="doctors-grid">
+          <article class="doctor-card">
+            <div class="doctor-photo-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=700&q=80"
+                alt="Dr. Arvind Subramanian, Senior Cardiologist"
+                class="doctor-photo"
+              />
+              <span class="dept-pill">Cardiology</span>
+            </div>
+            <div class="doctor-body">
+              <h3 class="doctor-name">Dr. Arvind Subramanian</h3>
+              <p class="doctor-specialty">MD, DM (Cardiology) &bull; Interventional Cardiologist</p>
+              <div class="doctor-meta">
+                <span><strong>16 Years</strong> Experience</span>
+                <span><strong>&#8377;900</strong> Consultation</span>
+              </div>
+              <button
+                type="button"
+                class="btn btn-secondary btn-full book-doctor-btn"
+                data-doctor="Dr. Arvind Subramanian"
+                data-department="Cardiology"
+              >
+                Book Appointment
+              </button>
+            </div>
+          </article>
+
+          <article class="doctor-card">
+            <div class="doctor-photo-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=700&q=80"
+                alt="Dr. Meera Krishnamurthy, Consultant Neurologist"
+                class="doctor-photo"
+              />
+              <span class="dept-pill">Neurology</span>
+            </div>
+            <div class="doctor-body">
+              <h3 class="doctor-name">Dr. Meera Krishnamurthy</h3>
+              <p class="doctor-specialty">MD, DM (Neurology) &bull; Neurophysiology Specialist</p>
+              <div class="doctor-meta">
+                <span><strong>13 Years</strong> Experience</span>
+                <span><strong>&#8377;850</strong> Consultation</span>
+              </div>
+              <button
+                type="button"
+                class="btn btn-secondary btn-full book-doctor-btn"
+                data-doctor="Dr. Meera Krishnamurthy"
+                data-department="Neurology"
+              >
+                Book Appointment
+              </button>
+            </div>
+          </article>
+
+          <article class="doctor-card">
+            <div class="doctor-photo-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=700&q=80"
+                alt="Dr. Kavitha Rajan, Senior Pediatrician"
+                class="doctor-photo"
+              />
+              <span class="dept-pill">Pediatrics</span>
+            </div>
+            <div class="doctor-body">
+              <h3 class="doctor-name">Dr. Kavitha Rajan</h3>
+              <p class="doctor-specialty">MD (Pediatrics) &bull; Child &amp; Adolescent Care</p>
+              <div class="doctor-meta">
+                <span><strong>11 Years</strong> Experience</span>
+                <span><strong>&#8377;650</strong> Consultation</span>
+              </div>
+              <button
+                type="button"
+                class="btn btn-secondary btn-full book-doctor-btn"
+                data-doctor="Dr. Kavitha Rajan"
+                data-department="Pediatrics"
+              >
+                Book Appointment
+              </button>
+            </div>
+          </article>
+
+          <article class="doctor-card">
+            <div class="doctor-photo-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1622902046580-2b47f47f5471?auto=format&fit=crop&w=700&q=80"
+                alt="Dr. Vikramaditya Nair, Orthopedic Surgeon"
+                class="doctor-photo"
+              />
+              <span class="dept-pill">Orthopedics</span>
+            </div>
+            <div class="doctor-body">
+              <h3 class="doctor-name">Dr. Vikramaditya Nair</h3>
+              <p class="doctor-specialty">MS (Orthopedics) &bull; Joint &amp; Sports Medicine</p>
+              <div class="doctor-meta">
+                <span><strong>14 Years</strong> Experience</span>
+                <span><strong>&#8377;800</strong> Consultation</span>
+              </div>
+              <button
+                type="button"
+                class="btn btn-secondary btn-full book-doctor-btn"
+                data-doctor="Dr. Vikramaditya Nair"
+                data-department="Orthopedics"
+              >
+                Book Appointment
+              </button>
+            </div>
+          </article>
+
+          <article class="doctor-card">
+            <div class="doctor-photo-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?auto=format&fit=crop&w=700&q=80"
+                alt="Dr. Ananya Deshmukh, Consultant Dermatologist"
+                class="doctor-photo"
+              />
+              <span class="dept-pill">Dermatology</span>
+            </div>
+            <div class="doctor-body">
+              <h3 class="doctor-name">Dr. Ananya Deshmukh</h3>
+              <p class="doctor-specialty">MD (Dermatology) &bull; Clinical &amp; Aesthetic Skin Care</p>
+              <div class="doctor-meta">
+                <span><strong>9 Years</strong> Experience</span>
+                <span><strong>&#8377;700</strong> Consultation</span>
+              </div>
+              <button
+                type="button"
+                class="btn btn-secondary btn-full book-doctor-btn"
+                data-doctor="Dr. Ananya Deshmukh"
+                data-department="Dermatology"
+              >
+                Book Appointment
+              </button>
+            </div>
+          </article>
+
+          <article class="doctor-card">
+            <div class="doctor-photo-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=700&q=80"
+                alt="Dr. Siddharth Menon, Senior General Physician"
+                class="doctor-photo"
+              />
+              <span class="dept-pill">General Medicine</span>
+            </div>
+            <div class="doctor-body">
+              <h3 class="doctor-name">Dr. Siddharth Menon</h3>
+              <p class="doctor-specialty">MD (Internal Medicine) &bull; Preventive &amp; Chronic Care</p>
+              <div class="doctor-meta">
+                <span><strong>18 Years</strong> Experience</span>
+                <span><strong>&#8377;600</strong> Consultation</span>
+              </div>
+              <button
+                type="button"
+                class="btn btn-secondary btn-full book-doctor-btn"
+                data-doctor="Dr. Siddharth Menon"
+                data-department="General Medicine"
+              >
+                Book Appointment
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section trust-section">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-tag">The MediCare Standard</span>
+          <h2 class="section-title">Why Patients Trust MediCare Plus</h2>
+          <p class="section-subtitle">
+            Every detail of our hospital workflow is engineered to reduce waiting times and bring clarity to your care plan.
+          </p>
+        </div>
+
+        <div class="trust-grid">
+          <div class="trust-card">
+            <div class="trust-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="8.5" cy="7" r="4" />
+                <polyline points="17 11 19 13 23 9" />
+              </svg>
+            </div>
+            <h3>Experienced Doctors</h3>
+            <p>Fellowship-trained consultants with decades of combined clinical expertise across major medical specialties.</p>
+          </div>
+
+          <div class="trust-card">
+            <div class="trust-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+              </svg>
+            </div>
+            <h3>Patient-Focused Care</h3>
+            <p>Unrushed consultations, clear plain-language explanations, and dedicated care coordinators for follow-up support.</p>
+          </div>
+
+          <div class="trust-card">
+            <div class="trust-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                <line x1="3" y1="9" x2="21" y2="9" />
+                <line x1="9" y1="21" x2="9" y2="9" />
+              </svg>
+            </div>
+            <h3>Modern Facilities</h3>
+            <p>In-house 3T MRI, digital pathology labs, low-radiation imaging, and infection-controlled outpatient suites.</p>
+          </div>
+
+          <div class="trust-card">
+            <div class="trust-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+            </div>
+            <h3>Easy Appointment Requests</h3>
+            <p>Transparent slot selection by department and specialist so you can plan your hospital visit around your schedule.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPOINTMENT BOOKING -->
+    <section class="section appointment-section" id="appointment">
+      <div class="container appointment-layout">
+        <div class="appointment-info">
+          <span class="section-tag">Outpatient Desk</span>
+          <h2 class="section-title">Request Your Appointment</h2>
+          <p class="appointment-lead">
+            Choose your preferred department, specialist, date, and consultation window. Our front-desk team reviews incoming requests promptly during outpatient hours.
+          </p>
+
+          <ul class="appointment-checklist">
+            <li>
+              <span class="check-dot" aria-hidden="true">&#10003;</span>
+              <span>Arrive 15 minutes prior for vitals and digital registration</span>
+            </li>
+            <li>
+              <span class="check-dot" aria-hidden="true">&#10003;</span>
+              <span>Carry previous prescriptions, lab reports, or imaging scans</span>
+            </li>
+            <li>
+              <span class="check-dot" aria-hidden="true">&#10003;</span>
+              <span>Cashless insurance desk available on the ground floor</span>
+            </li>
+          </ul>
+
+          <div class="demo-disclaimer" role="note">
+            <strong>Portfolio Demonstration Notice:</strong> This interface previews an interactive frontend booking workflow. Submissions validate locally in your browser and are not transmitted to a live hospital scheduling server.
+          </div>
+        </div>
+
+        <div class="appointment-card">
+          <form id="appointmentForm" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="patientName">Patient Full Name <span class="required">*</span></label>
+                <input type="text" id="patientName" name="patientName" placeholder="e.g., Karthik Sundaram" required />
+                <span class="error-text" id="patientNameError" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="patientPhone">Phone Number (10 Digits) <span class="required">*</span></label>
+                <input type="tel" id="patientPhone" name="patientPhone" inputmode="numeric" maxlength="10" placeholder="e.g., 9876543210" required />
+                <span class="error-text" id="patientPhoneError" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="patientEmail">Email Address <span class="required">*</span></label>
+                <input type="email" id="patientEmail" name="patientEmail" placeholder="e.g., karthik@example.com" required />
+                <span class="error-text" id="patientEmailError" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="departmentSelect">Select Department <span class="required">*</span></label>
+                <select id="departmentSelect" name="department" required>
+                  <option value="">Choose a department</option>
+                  <option value="Cardiology">Cardiology</option>
+                  <option value="Neurology">Neurology</option>
+                  <option value="Pediatrics">Pediatrics</option>
+                  <option value="Orthopedics">Orthopedics</option>
+                  <option value="Dermatology">Dermatology</option>
+                  <option value="General Medicine">General Medicine</option>
+                </select>
+                <span class="error-text" id="departmentSelectError" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="doctorSelect">Select Doctor <span class="required">*</span></label>
+                <select id="doctorSelect" name="doctor" required>
+                  <option value="">Choose a specialist</option>
+                  <option value="Dr. Arvind Subramanian" data-dept="Cardiology">Dr. Arvind Subramanian (Cardiology)</option>
+                  <option value="Dr. Meera Krishnamurthy" data-dept="Neurology">Dr. Meera Krishnamurthy (Neurology)</option>
+                  <option value="Dr. Kavitha Rajan" data-dept="Pediatrics">Dr. Kavitha Rajan (Pediatrics)</option>
+                  <option value="Dr. Vikramaditya Nair" data-dept="Orthopedics">Dr. Vikramaditya Nair (Orthopedics)</option>
+                  <option value="Dr. Ananya Deshmukh" data-dept="Dermatology">Dr. Ananya Deshmukh (Dermatology)</option>
+                  <option value="Dr. Siddharth Menon" data-dept="General Medicine">Dr. Siddharth Menon (General Medicine)</option>
+                </select>
+                <span class="error-text" id="doctorSelectError" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="appointmentDate">Appointment Date <span class="required">*</span></label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required />
+                <span class="error-text" id="appointmentDateError" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group form-group-full">
+                <label for="timeSlot">Available Time Slot <span class="required">*</span></label>
+                <select id="timeSlot" name="timeSlot" required>
+                  <option value="">Select preferred time window</option>
+                  <option value="09:30 AM - 10:30 AM">09:30 AM &ndash; 10:30 AM (Morning OPD)</option>
+                  <option value="11:00 AM - 12:00 PM">11:00 AM &ndash; 12:00 PM (Mid-Morning OPD)</option>
+                  <option value="02:30 PM - 03:30 PM">02:30 PM &ndash; 03:30 PM (Afternoon OPD)</option>
+                  <option value="05:00 PM - 06:00 PM">05:00 PM &ndash; 06:00 PM (Evening OPD)</option>
+                </select>
+                <span class="error-text" id="timeSlotError" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group form-group-full">
+                <label for="patientMessage">Short Message / Symptoms (Optional)</label>
+                <textarea id="patientMessage" name="patientMessage" rows="3" placeholder="Briefly describe your symptoms or reason for consultation..."></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-full">Submit Appointment Request</button>
+          </form>
+
+          <div class="booking-confirmation" id="bookingConfirmation" hidden role="status" aria-live="polite">
+            <div class="confirmation-badge" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <h3>Appointment Request Preview Generated</h3>
+            <p class="confirmation-subtext">
+              Your consultation summary has been prepared below. Please note this is a frontend demonstration preview and not a live hospital reservation.
+            </p>
+            <div class="confirmation-summary" id="confirmationSummary"></div>
+            <button type="button" class="btn btn-outline" id="bookAnotherBtn">Book Another Request</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT HOSPITAL -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-media">
+          <img
+            src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=80"
+            alt="Sunlit modern hospital atrium and patient reception lobby"
+            class="about-photo"
+          />
+          <div class="about-experience-badge">
+            <strong>20+ Years</strong>
+            <span>Of Trusted Clinical Excellence</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag">About MediCare Plus</span>
+          <h2 class="section-title">Designed Around Calm, Clarity, and Clinical Precision</h2>
+          <p>
+            Founded with a vision to bridge world-class medical technology with genuine human warmth, MediCare Plus serves families with integrated outpatient clinics, advanced diagnostic laboratories, and specialized surgical care under one roof.
+          </p>
+          <p>
+            Our multidisciplinary teams collaborate closely across departments so patients with complex conditions receive unified care plans rather than fragmented referrals.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-box">
+              <strong>NABH-Aligned Protocols</strong>
+              <span>Strict patient safety, sterilization, and clinical audit benchmarks.</span>
+            </div>
+            <div class="highlight-box">
+              <strong>Digital Health Records</strong>
+              <span>Seamless access to lab reports, imaging, and visit summaries.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATIENT TESTIMONIALS -->
+    <section class="section testimonials-section">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-tag">Patient Stories</span>
+          <h2 class="section-title">Words From Those We Care For</h2>
+          <p class="section-subtitle">
+            Real feedback from patients and families who visited our outpatient and specialty clinics.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="star-rating" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="testimonial-quote">
+              "Dr. Arvind took the time to walk my father through every ECG and echocardiogram result without rushing. The calm atmosphere at MediCare Plus immediately eased our anxiety."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">RP</div>
+              <div>
+                <strong>Raghavan Parthasarathy</strong>
+                <span>Cardiology Outpatient</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="star-rating" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="testimonial-quote">
+              "Booking my daughter's pediatric checkup was effortless, and we barely waited ten minutes past our slot. Dr. Kavitha is warm, thorough, and wonderful with children."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">SN</div>
+              <div>
+                <strong>Shruthi Natarajan</strong>
+                <span>Pediatrics Parent</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="star-rating" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="testimonial-quote">
+              "After months of knee pain, Dr. Vikramaditya recommended a conservative physiotherapy plan instead of immediate surgery. Six weeks later, I am back to morning walks."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">DM</div>
+              <div>
+                <strong>Deepak Mahadevan</strong>
+                <span>Orthopedics Patient</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-details">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Visit or Reach Our Care Desk</h2>
+          <p class="contact-intro">
+            Have a question about diagnostic packages, insurance partnerships, or specialist schedules? Send us a message or visit our campus.
+          </p>
+
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <strong>Hospital Address</strong>
+                <span>42 Greams Avenue, Anna Salai, Chennai, Tamil Nadu 600006</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </div>
+              <div>
+                <strong>Phone &amp; Helpline</strong>
+                <span>+91 44 2829 4500 / Emergency: 108</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div>
+                <strong>Email Desk</strong>
+                <span>care@medicareplus-hospital.in</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </div>
+              <div>
+                <strong>Working Hours</strong>
+                <span>Mon &ndash; Sat: 08:00 AM &ndash; 08:00 PM | Emergency: 24/7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <h3>Send a General Inquiry</h3>
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="contactName">Your Name <span class="required">*</span></label>
+              <input type="text" id="contactName" name="contactName" placeholder="Enter your full name" required />
+              <span class="error-text" id="contactNameError" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail">Email Address <span class="required">*</span></label>
+              <input type="email" id="contactEmail" name="contactEmail" placeholder="Enter your email address" required />
+              <span class="error-text" id="contactEmailError" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject">Subject <span class="required">*</span></label>
+              <input type="text" id="contactSubject" name="contactSubject" placeholder="e.g., Health checkup package details" required />
+              <span class="error-text" id="contactSubjectError" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Message <span class="required">*</span></label>
+              <textarea id="contactMessage" name="contactMessage" rows="4" placeholder="How can our patient support team assist you?" required></textarea>
+              <span class="error-text" id="contactMessageError" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <div class="contact-feedback" id="contactFeedback" hidden role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand-logo footer-logo" aria-label="MediCare Plus Home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <rect x="9" y="2" width="6" height="20" rx="2" fill="currentColor" />
+              <rect x="2" y="9" width="20" height="6" rx="2" fill="currentColor" />
+            </svg>
+          </span>
+          <span class="brand-text">MediCare <strong>Plus</strong></span>
+        </a>
+        <p class="footer-tagline">
+          Modern multispecialty healthcare committed to ethical medicine, clinical excellence, and compassionate patient experiences.
+        </p>
+        <div class="social-links" aria-label="Social media links">
+          <a href="#contact" class="social-icon" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a href="#contact" class="social-icon" aria-label="X (Twitter)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+            </svg>
+          </a>
+          <a href="#contact" class="social-icon" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+          <a href="#contact" class="social-icon" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Medical Services</a></li>
+          <li><a href="#doctors">Our Specialists</a></li>
+          <li><a href="#about">About Hospital</a></li>
+          <li><a href="#appointment">Book Appointment</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Departments</h4>
+        <ul>
+          <li><a href="#services">Cardiology</a></li>
+          <li><a href="#services">Neurology</a></li>
+          <li><a href="#services">Pediatrics</a></li>
+          <li><a href="#services">Orthopedics</a></li>
+          <li><a href="#services">Dermatology &amp; Medicine</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <ul class="footer-contact-list">
+          <li>42 Greams Avenue, Anna Salai, Chennai 600006</li>
+          <li>OPD Desk: +91 44 2829 4500</li>
+          <li>Emergency: 108 / 112</li>
+          <li>care@medicareplus-hospital.in</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 MediCare Plus Hospital. Frontend Portfolio Demonstration.</p>
+        <p>All appointment previews are simulated locally in the browser.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="hospital.js"></script>
+</body>
+</html>
